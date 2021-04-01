@@ -1,7 +1,7 @@
 <html>
 <head>
     <style>
-#image{ position: relative; left:1135; top: 250px;
+#image{ position: relative; left:1000; top: 250px;
     margin-left: auto;
     margin-right: auto;
     }
@@ -12,7 +12,7 @@
     }
 #form input {
     height:20px;
-    width: 500px;
+    width:500px;
     margin-left: auto;
     margin-right: auto;
 }
@@ -22,22 +22,67 @@
     top:30px;
     height: 35px;
     background-color: #fcf7fc;
-    border-style: solid;
-    border:none;
+    border:1px solid white;
+}
+#gsearch:hover{
+    border:  1px solid black;
 }
 #lucky{
     position: relative;
-    left: 100px;
+    left: 150px;
     top:30px;
     height: 35px;
     background-color: #fcf7fc;
-    border-style: solid;
-    border:none;
+    border:1px solid white;
+}
+#lucky:hover{
+    border: 1px solid black;
+}
+li{
+    float:left;
+}
+
+li a {
+  display: block;
+ color:black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 13px;
+}
+
+#signin:hover{
+    background-color: rgb(75, 75, 255);
+    text-decoration: none;
+}
+li a:hover{
+    text-decoration: underline;
+}
+ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: inline;
+    background-color: #333;
+    overflow: hidden;
+}
+#signin{
+    background-color: blue;
+    
 }
     </style>
 </head>
 <body>
     <main>
+        <ul>
+            <li><a href="">About</a></li>
+            <li><a href="">Store</a></li>
+            <li style="float:right" id="signin"><a href="">Sign in</a></li>
+            <li style="float:right"><a href="">Gmail</a></li>
+            <li style="float:right"><a href="">Images</a></li>
+            <li style="float:right"><a href=""><img src="Screenshot_2021-03-30_22-14-24.png"></a></li>
+            
+        </ul>
         <div>
             <img src="googlelogo_color_272x92dp.png" id="image">
             <form id="form">
